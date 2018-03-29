@@ -1,0 +1,53 @@
+{
+  entities: { 
+    users: {
+      1: {
+	id: 1,
+	username: 'username'
+	email: 'email@email.com'
+	img_url: 'image.svg'
+	password_digest: 'XJSNWEJJF'
+	session_token: 'XNDSWELKJSDF' 
+        }
+      }
+    tracks: {
+      1: {
+	id: 1,
+	title; 'song title' 
+	description: 'about the song'
+	img_url: 'image.sv'   #cover image for track 
+	song_url: 'location to song in database'  
+	user_id: '1' # who uploaded the song 
+	}
+      } 
+    comments: {
+      1: { 
+	id: 1 
+	body: 'comment body' 
+	user_id: 1 #comment poster 
+	song_id: 1 #what song the comment is on 
+	} 
+      }
+    likes: {
+      1: { 	
+	id: 1 	#index of who liked what song 
+	user_id: 1  #person who liked
+	song_id: 1  #song liked
+	type: 1     #1-5 (high energy, chill, unique, inspirational, social) 
+	}
+       } 
+     playlsit: { 
+       1: {
+	id; 1	#playlist id 
+	title: 'playlist title' 
+	song_list: [1,2,3,4]
+		
+      } 
+  UI: { 
+    session: { 
+      session_token: 'XSDLKJFLK'
+      } 
+    play_track: { 
+      song_id: 1 
+     }
+} 
